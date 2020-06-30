@@ -5,146 +5,277 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ramesh Ponneri</title>
     <style>
+        div, a, h4, p{
+            font-weight: bold; 
+            font-family: Arial, Helvetica, sans-serif; 
+            color:white;
+        }
+        nav{
+            background-color: #2C4E86;
+            color:white;
+            height:40px;
+            text-align: center;
+            padding-top: 15px;
+        }
+        nav a{
+            text-decoration: none;
+            padding:20px;
+            text-align: center;
+        }
+        nav a:hover{
+            color: #2C4E86;
+            background-color:white;
+        }
         td,th{
             border:1px solid blue; 
         }
-        a{
-            font-size: 20px; 
-            font-weight: bold;        
-            font-family: Arial, Helvetica, sans-serif;
-            padding:15px; 
-            text-decoration: none; 
-            color:white; 
-           
-        }
     </style>
 </head>
-<body style="background-color:lightblue; color: mediumblue">
-    <marquee behavior="scroll" direction="right">My first assignment dedicated to our Master &amp; Team using HTML+Inlne CSS</marquee>
-    <h1 style='text-align: center;background-color:midnightblue;color:whitesmoke;font-family: Arial, Helvetica, sans-serif;'>Naadathi Furn<br>Manufacturer : All kinds of Furniture</h1>
-    <!-- <a href='#bottom' style='text-align:right;'>Click here to go Bottom</a> -->
-    <div style='background-color: black; padding:30px 30px; border-radius: 5px;'>
-        <a>Contact No.: 9344418882</a><br><br>
-        <a href="mailto:naadathifurn@gmail.com">E-mail: naadathifurn@gmail.com</a>
-        <div style='float: right'>
-            <a href='#'>Home</a>
-            <a href='#'>About us</a>
-            <a href='#products'>Products</a>
-            <a href='#bottom'>Contact us</a>
+<body>
+    <!-- <marquee behavior="scroll" direction="right">My first assignment dedicated to our Master &amp; Team using HTML+Inlne CSS</marquee> -->
+    <header>
+        <div style='background-color: #051547; height:20px;'>
+        </div> 
+            <div style='background-color: #0B1E59; height:110px'>
+                <div style='float:left;padding-top:25px; margin-left:30px;margin-right: 10px';'>
+                    <img src='favicon.png' height="50">
+                </div>
+                <div style='float:left;padding-top:35px;font-size:30px;'>
+                    Naadathi Furn
+                    
+                </div>
+                <div style="float:left;font-size: 20px;margin-left:160px;margin-top:45px">
+                    Manufacturer : All kinds of furniture
+                </div>
+                <div style='float:right;margin-top:28px;margin-right: 20px;'>
+                    Contact No.: 9344418882<br><br>
+                    E-mail: naadathifurn@gmail.com
+                </div>
+            </div>    
         </div>
-    </div>
-    <h2><ins>About us</ins></h2>
-    <p style='text-align: justify;font-family: Arial, Helvetica, sans-serif;'>
-        <strong>Naadathi Furn</strong> reckoned as one of the emergent companies of the market and came into existence in the year 1988 as as Sole proprietorship based firm.
-        Our companies headquarter is situated at Chennai. 
-        We are prominent <mark><ins>manufacturer and trader of Glass Table, Sofa cum bed and many more.</ins></mark> These products are highly demanded for their captivating looks and unmatched quality.
-        Naadathi Furn started furniture manufacturing in small scale in Thiruvottiyur. Now located in Manali New Town, Chennai, it covers a wide area for better production of furniture.  We are specialised in developement production and sales on multi-category furniture products.  With years of manufacturing and technical skills, we are committed to prove high quality and high value-added furniture.
-        Emphasizing the construction of our brand and enterprises culture and keeping innovation as our core concept, we are trying to provide the most competitive and best solutions.  With high quality products, competitive pricing and excellent services, we still believe that we get better and better with each passing day.
-    </p>
+    </header>
+    <nav> 
+        <a href='#'>Home</a>
+        <a href='#about'>About us</a>
+        <a href='#products'>Products</a>
+        <a href='#bottom'>Contact us</a>
+        <!-- <div style='float:right'>
+            <a href='#' style='font-size: 15px;'><img src='Login.png' height='20'></a>
+        </div> -->
+    </nav>
     <br>
-    <h2><ins>Our infrastructure</ins></h2>
-    <p style='text-align: justify;font-family: Arial, Helvetica, sans-serif;'>
-        Outfitted with the ultra-modern infrastructural base, 
-        we are able to cater to the requirements of our patrons in promised time frame. 
-        At our manufacturing department, the production process is executed under 
-        the strict surveillance of highly skilled and dexterous professionals of this industry.
-        Furthermore, we are supported with extremely good logistic department that enable us 
-        to provide shipments to our client in give time.
-        We are the foremost manufacturer and trader of Glass Table, Sofa Cum Bed and many more. Offered products are available at competitive prices.
-        Leading Manufacturer of Computer Table from Chennai.
-    </p>
-
-    <h2><ins>Basic Information</ins></h2>
-    <ul style='text-align: justify;font-family: Arial, Helvetica, sans-serif; list-style-type: circle ;'>
-        <li>Nature of Business: Manufacturer</li>
-        <li>Additional Business: Trader</li>
-        <li>Company CEO: Selvarajendra</li>
-        <li>Total Number of Employees: 11 to 25 People</li>
-        <li>Year of Establishment: 1988</li>
-        <li>Legal Status of Firm: Sole Proprietorship (Individual)</li>
-        <li>Annual Turnover: Rs. 1 - 2 Crore</li>
-        <li>Statutory Profile:  Banker CENTRAL BANK OF INDIA</li>
-    </ul>
+    <article>
+        <div style='text-align: center;'>
+            <img src='banner.png' height=400>
+        </div>
+    </article>
+    <br>
+    <a name='about'></a>
+    <div style='height:370px ; width:96%; margin: auto;'>
+        <section style='background-color:#1D867A; height:370px; width:49%; float:left;margin-right: 5px;'>
+            <h4 style='color:white; margin-left:10px'><ins>About us</ins></h4>            
+            <p style='text-align: justify;color:white;margin-left:10px;font-weight:normal;margin-right:10px'>
+                <strong>Naadathi Furn</strong> reckoned as one of the emergent companies of the market and came into existence in the year 1988 as as Sole proprietorship based firm.
+                Our companies headquarter is situated at Chennai. 
+                We are prominent <mark><ins>manufacturer and trader of Glass Table, Sofa cum bed and many more.</ins></mark> These products are highly demanded for their captivating looks and unmatched quality.
+                Naadathi Furn started furniture manufacturing in small scale in Thiruvottiyur. Now located in Manali New Town, Chennai, it covers a wide area for better production of furniture.  We are specialised in developement production and sales on multi-category furniture products.  With years of manufacturing and technical skills, we are committed to prove high quality and high value-added furniture.
+                Emphasizing the construction of our brand and enterprises culture and keeping innovation as our core concept, we are trying to provide the most competitive and best solutions.  With high quality products, competitive pricing and excellent services, we still believe that we get better and better with each passing day.
+            </p>
+        </section>
+        <section style='background-color: #DDDDDD; height:370px; width:49%; float:right;'>
+            <h4 style='color:black; margin-left:10px'><ins>Our infra</ins></h4>            
+            <p style='text-align: justify;color:black;margin-left:10px;font-weight:normal;margin-right:10px'>
+                Outfitted with the u   we are able to cater to the requirements of our patrons in promised time fra
+                At our manufacturing department, the production process is executed under 
+                the strict surveillance of highly skilled and dexterous professionals of this industry.
+                Furthermore, we are supported with extremely good logistic department that enable us 
+                to provide shipments to our client in give time.
+                We are the foremost manufacturer and trader of Glass Table, Sofa Cum Bed and many more. Offered products are available at competitive prices.
+                Leading Manufacturer of Computer Table from Chennai.
+            </p>    
+            <ul style='color:black;font-weight:normal'>
+                <li>Nature of Business: Manufacturer</li>
+                <li>Additional Business: Trader</li>
+                <li>Company CEO: Selvarajendra</li>
+                <li>Total Number of Employees: 11 to 25 People</li>
+                <li>Year of Establishment: 1988</li>
+                <li>Legal Status of Firm: Sole Proprietorship (Individual)</li>
+                <li>Annual Turnover: Rs. 1 - 2 Crore</li>
+        </section>    
+    </div>
+    <br>
     <a name='products'></a>
-    <h2><ins>Products</ins></h2>
-    <h3 style='text-align: Center; font-family: Arial, Helvetica, sans-serif;'><ins>Computer Table</ins></h3>
-        <table width='100%' align='center' cellpadding='60' style='border-collapse: collapse;'>
-        <tr style='font-family: Arial, Helvetica, sans-serif; background-color:steelblue; color:white'>
-            <th>Sno</th>
-            <th>Model</th>
-            <th>Image</th>
-            <th>Price Rs.<br>(Incl.of GST)<br>1 Pcs</th>
-            <th>Other Details</th>
+    <!-- <h2><ins>Products</ins></h2> -->
+    <!-- <h3 style='text-align: Center; font-family: Arial, Helvetica, sans-serif;'><ins>Computer Table</ins></h3> -->
+    <table width='96%' align='center' cellpadding='50' style='border-collapse: collapse;text-align: center;'>
+        <tr style='font-family: Arial, Helvetica, sans-serif; background-color:steelblue; color:white;'>
+            <th colspan="4">Computer Tables</th>
         </tr>
-        <tr align="center" style='font-family: Arial, Helvetica, sans-serif; font-size: large;'>
-            <td>1</td>
-            <td>CT-1204</td>   
-            <td><img style='border:25px solid grey' src='ct-1204.jpg' alt='CT-1204 Computer Table'></td>    
-            <td>4590/-</td> 
-            <td>1200L*600W*765H</td>  
+        <tr style='font-family: Arial, Helvetica, sans-serif; font-size: large;'>
+            <td><img style='border:25px solid grey' src='ct-115.jpg' alt='CT-115 Computer Table'>
+                <ul>
+                    <li>Model : CT-115</li>
+                    <li><strong>Price : 1630/-</strong></li>
+                    <li>Spec : 139X108</li>
+                </ul>
+            </td>    
+
+            <td><img style='border:25px solid grey' src='ct-331.jpg' alt='CT-331 Computer Table'>
+                <ul>
+                    <li>Model : CT-331</li>
+                    <li><strong>Price : 3820/-</strong></li>
+                    <li>Spec : 1000L*483W*765H</li>
+                </ul>
+            </td>    
+
+            <td><img style='border:25px solid grey' src='ct-1204.jpg' alt='CT-1204 Computer Table'>
+                <ul>
+                    <li>Model : CT-1204</li>
+                    <li><strong>Price : 4590/-</strong></li>
+                    <li>Spec : 1200L*600W*765H</li>
+                </ul>
+            </td>
+
+            <td><img style='border:25px solid grey' src='ct-1402.jpg' alt='CT-1402 Computer Table'>
+                <ul>
+                    <li>Model : CT-1402</li>
+                    <li><strong>Price : 7260/-</strong></li>
+                    <li>Spec : 1470L*710W*765H</li>
+                </ul>
+            </td>    
         </tr>
-        <tr align="center" style='font-family: Arial, Helvetica, sans-serif; font-size: large;'>
-            <td>2</td>
-            <td>CT-331</td>   
-            <td><img style='border:25px solid grey' src='ct-331.jpg' alt='CT-331 Computer Table'></td>    
-            <td>3820/-</td> 
-            <td>1000L*483W*765H</td>  
-        </tr>
-        
-        <tr align="center" style='font-family: Arial, Helvetica, sans-serif; font-size: large;'>
-            <td>3</td>
-            <td>CT-1402</td>   
-            <td><img style='border:25px solid grey' src='ct-1402.jpg' alt='CT-1402 Computer Table'></td>    
-            <td>7260/-</td> 
-            <td>1470L*710W*765H</td>  
-        </tr>
-        
-        <tr align="center" style='font-family: Arial, Helvetica, sans-serif; font-size: large;'>
-            <td>4</td>
-            <td>CT-115</td>   
-            <td><img style='border:25px solid grey' src='ct-115.jpg' alt='CT-115 Computer Table'></td>    
-            <td>1630/-</td> 
-            <td>139x108</td>  
+        <tr style='font-family: Arial, Helvetica, sans-serif; background-color:steelblue; color:white;'>
+            <th colspan="2">
+                <details style='background-color:#18436B; padding:20px;'>
+                    <summary>Order</summary>
+                    <br>
+                    <form style='text-align: left; font-weight: normal;' action="/action_page.php" method="get">
+                        <label for="name">Name:</label><br>
+                        <input type="text" id="name" name="name" required><br><br>
+                        <label for="lname">Mobile No.</label><br>
+                        <input type="tel" id="mobile" name="mobile" required><br><br>
+                        <label for="whatsapp">Whats App No.</label><br>
+                        <input type="tel" id="WaNo' name="WaNo"><br><br>
+                        <label for="Email">E-mail</label><br>
+                        <input type="email" id="email' name="email"><br><br>
+                        <label for="Address">Address</label><br>
+                        <textarea id="address" name="address" rows="4" cols="50"></textarea><br><br>
+                        <label for="pincode">Pincode</label><br>
+                        <input type='number' id="pincode' name="pincode"><br><br>
+                        <label for="landmark">Landmark</label><br>
+                        <input type='text' id="landmark' name="landmark"><br><br>
+                        <label for="dod">Date of Delivery</label><br>
+                        <input type='date' id="dod' name="dod"><br><br>
+                        <label for="payment">Payment</label><br>
+                        <input type="radio" id="adv" name="payment" value="advance" checked>
+                        <label for="adv">Advance</label>
+                        <input type="radio" id="cod" name="payment" value="cod">
+                        <label for="cod">Cash on Delivery</label><br><br>
+                        <table style='background-color:steelblue;border-collapse: collapse;'>
+                            <tr>
+                                <th style='width: 150px;'>Item Description</th>
+                                <th style='width: 50px; text-align: center;'>Qty</th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select name="p1" id="p1" style='width:150px; height:30px;'>
+                                        <optgroup label="Computer Tables">
+                                          <option value="ct-115" selected>CT-115</option>
+                                          <option value="ct-331">CT-331</option>
+                                          <option value="ct-1204">CT-1204</option>
+                                          <option value="ct-1402">CT-1402</option>
+                                        </optgroup>
+                                    </select>
+                                </td>
+                                <td>                        
+                                    <input style='text-align: right;height: 30px;' type='number' id="q1' name="q1" min='0' value='0'>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select name="p2" id="p2" style='width:150px; height:30px;'>
+                                        <optgroup label="Computer Tables">
+                                          <option value="ct-115">CT-115</option>
+                                          <option value="ct-331" selected>CT-331</option>
+                                          <option value="ct-1204">CT-1204</option>
+                                          <option value="ct-1402">CT-1402</option>
+                                        </optgroup>
+                                    </select>
+                                </td>
+                                <td>                        
+                                    <input style='text-align: right;height: 30px;' type='number' id="q1' name="q1" min='0' value='0'>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select name="p3" id="p3" style='width:150px; height:30px;'>
+                                        <optgroup label="Computer Tables">
+                                          <option value="ct-115">CT-115</option>
+                                          <option value="ct-331">CT-331</option>
+                                          <option value="ct-1204" selected>CT-1204</option>
+                                          <option value="ct-1402">CT-1402</option>
+                                        </optgroup>
+                                    </select>
+                                </td>
+                                <td>                        
+                                    <input style='text-align: right;height: 30px;' type='number' id="q1' name="q1" min='0' value='0'>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select name="p4" id="p4" style='width:150px; height:30px;'>
+                                        <optgroup label="Computer Tables">
+                                          <option value="ct-115">CT-115</option>
+                                          <option value="ct-331">CT-331</option>
+                                          <option value="ct-1204">CT-1204</option>
+                                          <option value="ct-1402" selected>CT-1402</option>
+                                        </optgroup>
+                                    </select>
+                                </td>
+                                <td>                        
+                                    <input style='text-align:right;height:30px;' type='number' id="q1' name="q1" min='0' value='0'>
+                                </td>
+                            </tr>
+                        </table>    
+                        <br><br>
+                        <input style='padding:10px;' type="submit" value="Submit">
+                    </form>
+                </details>
+            </th>
+            <th colspan="2"><a style='background-color:#18436B;text-decoration:none;padding:20px;' href='Pricelist.pdf' target="_blank">View / Download All Products Price List</a></th>
         </tr>
     </table>
-    <hr>
-    <h3 style='text-align: right;'><a style='color:black;' href='Pricelist.pdf' target="_blank">View / Download All Products Price List</a></h3>
-    <hr>
     <br>
-    <h2><ins>Our Factory</ins></h2>
-    <div style='text-align: center;'>
-    <img src='Fac1.jpg' alt='Our Factory Image' width="400" style='border: 30px solid gray;'>
-    &nbsp;&nbsp;&nbsp;
-    <img src='Fac3.jpg' alt='Our Factory Image' width="400" style='border: 30px solid gray;'>
-    <br><br>
-    <img src='Fac2.jpg' alt='Our Factory Image' width="400" style='border: 30px solid gray;'>
-    <br><br>
-    </div>
     <a name='bottom'></a>
-    <div style='background-color:steelblue;color:white;padding:50px 50px;font-family: Arial, Helvetica, sans-serif; font-size: large;'>
-        Naadathi Furn<br>
-        No.2, Iyya Solomon Road<br>
-        Gnanapuspam Nagar, TPP-Burma Nagar Link Road<br>
-        Manali New Town<br>
-        Sadayan Kuppam<br>
-        Near Chennai Petro Chemical Limited<br>
-        Thiruvottiyur, Chennai - 600103<br>
-        TamilNadu, India
-        <div style='float: right;'>
+    <div style='height:150px;background-color:#14315D;color:white;padding: 28px;'>
+        <div style='float:left;font-weight: normal;'>
+            <strong>Naadathi Furn</strong><br>
+            No.2, Iyya Solomon Road<br>
+            Gnanapuspam Nagar, TPP-Burma Nagar Link Road<br>
+            Manali New Town<br>
+            Sadayan Kuppam<br>
+            Near Chennai Petro Chemical Limited<br>
+            Thiruvottiyur, Chennai - 600103<br>
+            TamilNadu, India
+        </div>
+        <div style='float:right;font-weight: normal;margin-top: 20px;'>
                 Contact:
-                Selvarajendra (Proprietor)
-                Mobile : 9344418882
+                Selvarajendra (Proprietor)<br>
+                Mobile : 9344418882<br><br><br>
+                E-mail : naadathifurn@gmail.com<br>
+                Web : http://www.naadathifurn.com/
         </div>    
     </div>
-    <h4 style='text-align: right; color: black;font-family: Arial, Helvetica, sans-serif' >&copy;2020 Naadathi Furn</h5>
-    <div align='Center'>
-        <audio controls>
-            <source src="Oru_Kili_Uruguthu-StarMusiQ.Com.mp3" type="audio/mp3">
-        </audio>
-    </div>
-    <br><br><br>        
-    <iframe style="border:1px solid black" width="100%"  height="300" src="https://www.youtube.com/embed/eJ1QM3ZZ0f4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    <h1 style='font-size: 50px; text-align: center;'>&#128512;</h1>
-    <a style='color:black;' href='#'>Click here to go Top</a>
+    <div style="background-color:#2C4E86; width: 100%; height: 50px;font-weight: normal;">
+        <div style='float:left;font-weight: normal;padding:15px;width:40%'>
+            &copy;2020 Naadathi Furn &nbsp;&nbsp; Site Last updated on 30-06-2020
+        </div>
+        <div style='float:left;width:15%;margin-top:15px;text-align: center;'>
+            <a style='font-weight:normal;color:white;padding:15px;' href='#'>Click here to go Top</a>
+        </div>
+        <div style='float:right; font-weight: normal;padding:15px;width:25%'>
+            Designed &amp; Developed by Ramesh Ponneri                
+        </div>
+    </div>    
 </body>
 </html>
