@@ -3,103 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ramesh Ponneri</title>
+    <title>Ramesh Ponneri - Js Assignments</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src='script.js'></script>
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row jumbotron" style='background-color: #5493C6;' height=50>
-            <div class='col-sm-4'>
-                <img src="RR.png" alt="Ramesh" class='rounded-circle'>
-            </div>
-            <div class='col-sm-4' text-center>
-                <h2 class='text-white text-center'>Ramesh Ramadoss</h2>
-                <h3 class='text-white text-center'>Full Stack Developer <span class='badge badge-dark badge-pill'>Novice</span></h3>
-                <h2 class='text-right'><a href="mailto:aruninfotechchennai@gmail.com" class="btn btn-primary text-white" role="button">E-mail me</a></h2>
-            </div>
-            <div class="col-sm-4 text-center">
-                <a href="#" class="btn btn-primary">Projects</a>
-                <a href="#" class="btn btn-primary">About Me</a>
-                <a href="#" class="btn btn-primary">Contact Me</a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <h4 class='text-center'>Projects / Experience</h4>
-                <br>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-              <div class="thumbnail">
-                <a href="html.jpg">
-                  <img src="html.jpg" alt="HTML" style="width:100%">
-                  <div class="caption">
-                    <p class='text-center'><span>Photo by <a href="https://unsplash.com/@florianolv?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Florian Olivo</a> on <a href="https://unsplash.com/s/photos/html?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></p>
-                  </div>
+    <div class="container">
+        <nav class="navbar fixed-top navbar-dark bg-primary navbar-expand-lg">
+        <a class="navbar-brand" href="#">Ramesh JS Assignment</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+            <!-- <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+            </li> -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Assignment 1
                 </a>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="thumbnail">
-                <a href="css.jpg">
-                  <img src="css.jpg" alt="CSS" style="width:100%">
-                  <div class="caption">
-                    <p class='text-center'><span>Photo by <a href="https://unsplash.com/@pankajpatel?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Pankaj Patel</a> on <a href="https://unsplash.com/s/photos/css?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></p>
-                  </div>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="javascript:Arithmatic()">Arithmatic Operators</a>
+                    <a class="dropdown-item" href="javascript:Conditional()">Conditional Operator</a>
+                    <a class="dropdown-item" href="javascript:A1f3()">Swap Two Numbers</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Assignment 2
                 </a>
-              </div>
-            </div>
-            <div class="col-md-4">
-              <div class="thumbnail">
-                <a href="BS.jpg">
-                  <img src="BS.jpg" alt="Boot Strap" style="width:100%">
-                  <div class="caption">
-                    <p class='text-center'><span>Photo by <a href="https://unsplash.com/@pankajpatel?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Pankaj Patel</a> on <a href="https://unsplash.com/s/photos/bootstrap?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span></p>
-                  </div>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="javascript:A2f1()">Parameterized Funcion</a>
+                    <a class="dropdown-item" href="javascript:A2f2()">Check Odd / Even</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Assignment 3
                 </a>
-              </div>
-            </div>
-          </div>
-          <div>
-            <div class='row'>
-                <div class='col'>
-                    <h3 class='text-center'>About Me</h3>
-                    <br>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="javascript:A3f1()">Factorial</a>
+                    <a class="dropdown-item" href="javascript:A3f2()">Check Leap Year</a>
+                    <a class="dropdown-item" href="javascript:A3f3()">Fibonacci Series</a>
+                    <a class="dropdown-item" href="javascript:A3f4()">Simple Calculator</a>
                 </div>
-            </div>
-            <div class="row">
-                <div class='col-6 w-50 bg-primary text-white'>
-                    <h3>Personal Details</h3>
-                    <ul class='list-group'>
-                        <li class="list-group-item list-group-item-info">Ramesh Ramadoss</li>
-                        <li class="list-group-item list-group-item-info">05/11/1976</li>
-                        <li class="list-group-item list-group-item-info">Ponneri</li>
-                        <li class="list-group-item list-group-item-info">Mobile : 9840255597</li>
-                    </ul>       
-                </div>
-
-                <div class="col-6 w-50 bg-primary text-white">
-                    <h3>Education / Skillset</h3>
-                    <ul class='list-group'>
-                        <li class="list-group-item list-group-item-success">B.com</li>
-                        <li class="list-group-item list-group-item-success">HTML, CSS, Bootstrap, Javascript, React js</li>
-                        <li class="list-group-item list-group-item-success">Node Js</li>
-                        <li class="list-group-item list-group-item-success">DBMS, MS Access, MSSQL Server, MongoDB</li>
-                    </ul>       
-                </div>
-            </div>
+            </li>
+            </ul>
         </div>
-        <div class="row jumbotron">
-            <div class="col">
-                <h6 class='text-center'>&copy; Ramesh 2020</h4>
-            </div>
-        </div>
-    <div>
+        </nav>
+    </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>    
 </body>
-</html>  
-
-
+</html>   
