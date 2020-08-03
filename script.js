@@ -269,3 +269,128 @@ function Calc(option){
     }
     document.write('<br>', number);
 }
+
+let A3f5 = () => {
+    input = prompt('Enter No. eg. 1+1+1-5');
+    document.write('Simple Calculator using Arrow function, eval() & Try Catch');
+    document.write(`<br>Input No. Series : ${input}`);
+    try {
+        document.write(`<br>Result : ${eval(input)}`);
+    }
+    catch(err) {
+        document.write('<br>'+err.message);
+    }
+    Redirect();
+}
+
+function A4f1(){
+    document.write('<br>Cumulative Grade Points Average (CGPA)')
+    document.write('<br> argument passed : 8,9,7,9,7')
+    var x = new Student(8,9,7,9,7);
+    x.calCgpa();
+    Redirect();
+}
+
+class Student{
+    constructor(sub1, sub2, sub3, sub4, sub5){
+        // this.sub1 = sub1;
+        // this.sub2 = sub2;
+        // this.sub3 = sub3;
+        // this.sub4 = sub4;
+        // this.sub5 = sub5;
+        this.cpga = (sub1 + sub2 + sub3 + sub4 + sub5) / 5;
+    }
+
+    calCgpa(){
+        document.write('<br>'+`CGPA is : ${this.cpga}`);
+        document.write('<br>'+`CGPA % is : ${(this.cpga * 9.5)}`);
+    }
+}
+
+function A4f2(){
+    document.write('<br>Display Patient Details using Class');
+    document.write('<hr>');
+    var op = new Outpatient();
+    op.op();
+    document.write('<hr>');
+    var ipgw = new Generalward();
+    ipgw.ipgw();
+    document.write('<hr>');
+    var ipsw = new Specialward();
+    ipsw.ipsw();
+    Redirect();
+}
+
+class Patient{
+    constructor(){
+        this.name = 'Gokul';
+        this.age = 55 ;
+        this.gender = 'Male';
+    }
+    patient(){
+        document.write("<br> Patient's Name : " + this.name);
+        document.write("<br> Age : " + this.age);
+        document.write("<br> Gender : " + this.gender);
+    }
+}
+
+class Outpatient extends Patient{
+    constructor(){
+        super()
+        this.opnumber = '2001';
+        this.drid = '873456';
+        this.fees = 250;
+    }
+
+    op(){
+        document.write('<br>Out - Patient Details')
+        this.patient();
+        document.write('<br>Doctor-id : '+this.drid);
+        document.write('<br>Fees : Rs.'+this.fees);
+    }
+}
+
+class Inpatient extends Patient{
+    constructor(){
+        super();
+        this.ipnumber = '103';
+        this.nodays = 5;
+    }
+}
+
+class Generalward extends Inpatient{
+    constructor(){
+        super();
+        this.rentperday = 300;
+        this.fees = 1500;
+    }
+    ipgw(){
+        document.write('<br>In-Patient details : General Ward')
+        this.patient();
+        document.write('<br>Ip - Number : ' + this.ipnumber);
+        document.write('<br>No. of days : ' + this.nodays);
+        document.write('<br>Rent per day : Rs.' + this.rentperday);
+        document.write('<br>Fees : Rs.' + this.fees);
+    }
+}
+
+class Specialward extends Inpatient{
+    constructor(){
+        super();
+        this.rentperday = 300;
+        this.roomno = '743';
+        this.ebbill = 500;
+        this.fees = 2000;
+    }
+    ipsw(){
+        document.write('<br>In-Patient details : Special Ward')
+        this.patient();
+        document.write('<br>Ip - Number : ' + this.ipnumber);
+        document.write('<br>Room Number : ' + this.roomno);
+        document.write('<br>No. of days : ' + this.nodays);
+        document.write('<br>Rent per day : Rs.' + this.rentperday);
+        document.write('<br>EB-Bill : Rs.' + this.ebbill);
+        document.write('<br>Fees : Rs.' + this.fees);
+    }
+
+}
